@@ -47,7 +47,7 @@ export default function ContactMe() {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="w-2/3 space-y-6 text-slate-400 mt-8  "
+        className="md:w-2/3 w-full space-y-6 text-slate-400 mt-8  "
       >
         <FormField
           control={form.control}
