@@ -1,13 +1,20 @@
+import { MainProvider } from "@/components/Provider";
+import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { cn } from "@/lib/utils";
+import { Toaster } from "@/components/ui/Toaster";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Mehdi-Fadaei",
   description: "Portfolio site for Mehdi_fadaei",
+
+  // icons: {
+  //   icon: "/ui/MC.png",
+  // },
 };
 
 export default function RootLayout({
@@ -17,10 +24,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full">
+      {/* <Head>
+        <link rel="icon" href="/MC.png" sizes="any" />
+      </Head> */}
       <body
-        className={cn("relative h-full antialiased font-sans bg-backgroundd", inter.className)}
+        className={cn(
+          "relative antialiased font-sans min-h-screen",
+          inter.className
+        )}
       >
-        {children}
+        <MainProvider>{children}</MainProvider>
+        <Toaster />
       </body>
     </html>
   );
