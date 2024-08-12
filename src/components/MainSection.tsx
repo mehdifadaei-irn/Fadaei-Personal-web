@@ -1,9 +1,11 @@
+"use client";
 import React from "react";
 import { Evenodd } from "./ui/Icons";
 import Tech from "./ui/Tech";
 import ItemHead from "./ui/ItemHead";
 import Image from "next/image";
 import ContactMe from "./ContactMe";
+import { useScroll } from "framer-motion";
 
 const MainSection = () => {
   return (
@@ -443,10 +445,53 @@ const MainSection = () => {
             You can contact me through the communication channels on this page
             or send me an email.{" "}
           </p>
-          <ContactMe/>
+          <ContactMe />
         </div>
       </section>
       {/*  */}
+      <footer className="max-w-md pb-16 text-base text-slate-500 sm:pb-0">
+        Built with{" "}
+        <a
+          href="https://nextjs.org/"
+          className="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
+          target="_blank"
+          rel="noreferrer noopener"
+          aria-label="Next.js (opens in a new tab)"
+        >
+          Next.js
+        </a>{" "}
+        and{" "}
+        <a
+          href="https://tailwindcss.com/"
+          className="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
+          target="_blank"
+          rel="noreferrer noopener"
+          aria-label="Tailwind CSS (opens in a new tab)"
+        >
+          Tailwind CSS
+        </a>
+        , deployed with{" "}
+        <a
+          href="https://vercel.com/"
+          className="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
+          target="_blank"
+          rel="noreferrer noopener"
+          aria-label="Vercel (opens in a new tab)"
+        >
+          Vercel
+        </a>
+        . All text is set in the{" "}
+        <a
+          href="https://rsms.me/inter/"
+          className="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
+          target="_blank"
+          rel="noreferrer noopener"
+          aria-label="Inter (opens in a new tab)"
+        >
+          Inter
+        </a>{" "}
+        typeface.
+      </footer>
     </main>
   );
 };

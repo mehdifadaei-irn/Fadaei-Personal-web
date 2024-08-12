@@ -1,18 +1,39 @@
 "use client";
 
-import { useRouter } from "next/navigation";
-import React, { useState } from "react";
+import { useMotionValueEvent, useScroll } from "framer-motion";
+import { useState } from "react";
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState("ABOUT");
-  const router = useRouter();
+
+  const { scrollYProgress } = useScroll();
+
+  useMotionValueEvent(scrollYProgress, "change", (e) => {
+    if (e >= 0 && e <= 0.18) {
+      setActiveNav("ABOUT");
+    } else if (e >= 0.18 && e <= 0.672) {
+      setActiveNav("EXPERIENCE");
+    } else if (e >= 0.673 && e <= 0.987) {
+      setActiveNav("PROJECTS");
+    } else {
+      setActiveNav("CONTACT-ME");
+    }
+    //180   672  987
+  });
+
+  function scrollToElement(id: string) {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }
   return (
     <nav className="lg:block hidden" aria-label="In-page jump links">
       <ul className="mt-16 w-max ">
         <li>
           <a
             onClick={() => {
-              router.push("#ABOUT");
+              scrollToElement("ABOUT");
               setActiveNav("ABOUT");
             }}
             className={`group flex items-center py-3 cursor-pointer ${
@@ -36,7 +57,7 @@ const Nav = () => {
         <li>
           <a
             onClick={() => {
-              router.push("#EXPERIENCE");
+              scrollToElement("EXPERIENCE");
               setActiveNav("EXPERIENCE");
             }}
             className={`group flex items-center py-3 cursor-pointer ${
@@ -59,7 +80,7 @@ const Nav = () => {
           <a
             href="#about"
             onClick={() => {
-              router.push("#PROJECTS");
+              scrollToElement("PROJECTS");
               setActiveNav("PROJECTS");
             }}
             className={`group flex items-center ${
@@ -81,7 +102,8 @@ const Nav = () => {
         <li>
           <a
             onClick={() => {
-              router.push("#CONTACT-ME");
+              scrollToElement("CONTACT-ME");
+
               setActiveNav("CONTACT-ME");
             }}
             className={`group flex items-center cursor-pointer  ${
