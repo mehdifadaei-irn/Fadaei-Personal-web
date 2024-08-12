@@ -297,6 +297,29 @@ const MainSection = () => {
                     between your device and the internet. VPNs protect you from
                     snooping, interference, and censorship.
                   </p>
+                  <ul
+                    className="mt-2 flex flex-wrap"
+                    aria-label="Technologies used"
+                  >
+                    <li className="mr-1.5 mt-2 ">
+                      <Tech name="+1k user" />
+                    </li>
+                    <li className="mr-1.5 mt-2 ">
+                      <Tech name="react-query" />
+                    </li>
+                    <li className="mr-1.5 mt-2 ">
+                      <Tech name="Rechart" />
+                    </li>
+                    <li className="mr-1.5 mt-2 ">
+                      <Tech name="Stripe" />
+                    </li>
+                    <li className="mr-1.5 mt-2 ">
+                      <Tech name="Unit testing" />
+                    </li>
+                    <li className="mr-1.5 mt-2 ">
+                      <Tech name="NextUI" />
+                    </li>
+                  </ul>
                 </div>
                 {/* img */}
                 <Image
@@ -343,6 +366,15 @@ const MainSection = () => {
                       <Tech name="Web3" />
                     </li>
                     <li className="mr-1.5 mt-2 ">
+                      <Tech name="Upgradable" />
+                    </li>
+                    <li className="mr-1.5 mt-2 ">
+                      <Tech name="Wagmi" />
+                    </li>
+                    <li className="mr-1.5 mt-2 ">
+                      <Tech name="ethers.js" />
+                    </li>
+                    <li className="mr-1.5 mt-2 ">
                       <Tech name="Polygon" />
                     </li>
                     <li className="mr-1.5 mt-2 ">
@@ -371,21 +403,78 @@ const MainSection = () => {
                 <div className="z-10 sm:order-2 sm:col-span-6">
                   <h3>
                     <a
-                      href="https://github.com/mehdifadaei-irn/Redit-Clone"
+                      href="https://shop-filter-nine.vercel.app/"
                       rel="noreferrer noopener"
                       target="_blank"
-                      aria-label="Redit (open in new tab)"
+                      aria-label="shop (open in new tab)"
                       className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
                     >
                       <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                      <ItemHead txt1="Reddit" txt2="Clone" />
+                      <ItemHead txt1="Shop" txt2="" />
                     </a>
                   </h3>
                   <p className="font-normal leading-normal text-slate-400">
-                    Reddit is a website comprising user-generated
-                    content—including photos, videos, links, and text-based
-                    posts—and discussions of this content in what is essentially
-                    a bulletin board system.
+                    Developed a cutting-edge form validation system within a
+                    Next.js application, utilizing the latest technologies to
+                    ensure robust and scalable code. The project focused on
+                    creating an efficient, type-safe form handling process,
+                    significantly improving both developer experience and
+                    application performance
+                  </p>
+                  <ul
+                    className="mt-2 flex flex-wrap"
+                    aria-label="Technologies used"
+                  >
+                    <li className="mr-1.5 mt-2 ">
+                      <Tech name="react-hook-form" />
+                    </li>
+                    <li className="mr-1.5 mt-2 ">
+                      <Tech name="Zod" />
+                    </li>
+                    <li className="mr-1.5 mt-2 ">
+                      <Tech name="TypeScript" />
+                    </li>
+                    <li className="mr-1.5 mt-2 ">
+                      <Tech name="Next.js" />
+                    </li>
+                    <li className="mr-1.5 mt-2 ">
+                      <Tech name="React-query" />
+                    </li>
+                  </ul>
+                </div>
+                {/* img */}
+                <Image
+                  alt="ChanceRoom landing page"
+                  src={"/ui/shop.png"}
+                  priority
+                  decoding="async"
+                  className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
+                  width={320}
+                  height={320}
+                />
+              </div>
+            </li>
+            <li className="mb-12">
+              <div className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+                <div className="z-10 sm:order-2 sm:col-span-6">
+                  <h3>
+                    <a
+                      href="https://motions-dashboard.vercel.app/"
+                      rel="noreferrer noopener"
+                      target="_blank"
+                      aria-label="motion & dashboard (open in new tab)"
+                      className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
+                    >
+                      <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                      <ItemHead txt1="motion" txt2="Charts" />
+                    </a>
+                  </h3>
+                  <p className="font-normal leading-normal text-slate-400">
+                    Developed a dynamic and visually appealing admin dashboard
+                    using React. Leveraged Framer Motion to implement smooth and
+                    engaging animations, enhancing user experience and
+                    interactivity across the platform
                   </p>
                   <ul
                     className="mt-2 flex flex-wrap"
@@ -395,10 +484,10 @@ const MainSection = () => {
                       <Tech name="Shadcn" />
                     </li>
                     <li className="mr-1.5 mt-2 ">
-                      <Tech name="ZOD" />
+                      <Tech name="Framer-motion" />
                     </li>
                     <li className="mr-1.5 mt-2 ">
-                      <Tech name="UseForm" />
+                      <Tech name="Rechart" />
                     </li>
                     <li className="mr-1.5 mt-2 ">
                       <Tech name="TypeScript" />
@@ -411,7 +500,7 @@ const MainSection = () => {
                 {/* img */}
                 <Image
                   alt="Redit landing page"
-                  src={"/ui/3.jpg"}
+                  src={"/ui/motion.png"}
                   priority
                   decoding="async"
                   className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
