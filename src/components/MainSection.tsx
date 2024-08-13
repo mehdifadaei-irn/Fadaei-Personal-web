@@ -247,7 +247,8 @@ const MainSection = () => {
           </ol>
           <div className="mt-12">
             <a
-              href="https://online.publuu.com/608965/1385509"
+              href="/Mehdi-Fadaei_front-end.pdf"
+              download
               target="_blank"
               rel="noreferrer noopener"
               aria-label="View Full Résumé (opens in a new tab)"
