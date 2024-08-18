@@ -247,7 +247,7 @@ const MainSection = () => {
           </ol>
           <div className="mt-12">
             <a
-              href="/Mehdi-Fadaei_front-end.pdf"
+              href="/Mehdi_Fadaei-front-end.pdf"
               download
               target="_blank"
               rel="noreferrer noopener"
